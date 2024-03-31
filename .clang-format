@@ -10,10 +10,10 @@ AlignOperands: 'true'
 AlignTrailingComments: 'true'
 AllowAllArgumentsOnNextLine: 'false'
 AllowShortBlocksOnASingleLine: 'true'
-AllowShortLoopsOnASingleLine: 'true'
+AllowShortLoopsOnASingleLine: 'false'
 AlwaysBreakTemplateDeclarations: 'Yes'
 BinPackArguments: 'false'
-BreakBeforeBinaryOperators: None
+BreakBeforeBinaryOperators: All
 BreakBeforeBraces: Attach
 BreakBeforeTernaryOperators: 'true'
 BreakConstructorInitializers: BeforeComma
@@ -27,6 +27,7 @@ FixNamespaceComments: 'true'
 IncludeBlocks: Regroup
 IndentCaseLabels: 'true'
 IndentWidth: '4'
+InsertBraces: 'true'
 KeepEmptyLinesAtTheStartOfBlocks: 'false'
 Language: Cpp
 NamespaceIndentation: None
@@ -41,7 +42,7 @@ SpaceBeforeAssignmentOperators: 'true'
 SpaceBeforeCpp11BracedList: 'true'
 SpaceBeforeCtorInitializerColon: 'false'
 SpaceBeforeInheritanceColon: 'false'
-SpaceBeforeParens: Never
+SpaceBeforeParens: ControlStatements
 SpaceBeforeRangeBasedForLoopColon: 'false'
 SpaceInEmptyParentheses: 'false'
 SpacesBeforeTrailingComments: '1'
