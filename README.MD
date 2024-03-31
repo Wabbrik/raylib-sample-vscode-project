@@ -28,7 +28,7 @@ Unzip and add the `/bin` directory to your PATH.
 
 Linux:
 ```sh
-$ mkdir build; cd build; cmake ..;
+$ mkdir build; cd build; cmake -DCMAKE_C_COMPILER=clang ..;
 ```
 
 Windows:
