@@ -7,7 +7,6 @@
     "clang-format.executable": "clang-format",
     "clangd.detectExtensionConflicts": true,
     "clangd.enableCodeCompletion": true,
-    "clangd.path": "~/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
     "clangd.restartAfterCrash": true,
     "clangd.inactiveRegions.opacity": 0.3,
     "makefile.makefilePath": "${workspaceFolder}/build",
