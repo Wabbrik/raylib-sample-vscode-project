@@ -1,18 +1,18 @@
 #include "raylib.h"
 #include "raymath.h"
 
-#define COUNT_OF(x) ((sizeof(x) / sizeof(0 [x])) / ((size_t)(!(sizeof(x) % sizeof(0 [x])))))
+#define COUNT_OF(x) ((sizeof(x) / sizeof(0 [x])))
 
-#define G                       400
-#define PLAYER_JUMP_SPEED       350.0f
-#define PLAYER_HORIZONTAL_SPEED 200.0f
+#define G                       (400)
+#define PLAYER_JUMP_SPEED       (350.0f)
+#define PLAYER_HORIZONTAL_SPEED (200.0f)
 
-#define PLAYER_RECTANGLE_SIZE 40.0f
+#define PLAYER_RECTANGLE_SIZE (40.0f)
 
-#define SCREEN_WIDTH       800
-#define SCREEN_HEIGHT      450
-#define HALF_SCREEN_WIDTH  SCREEN_WIDTH / 2.0
-#define HALF_SCREEN_HEIGHT SCREEN_HEIGHT / 2.0
+#define SCREEN_WIDTH       (800)
+#define SCREEN_HEIGHT      (450)
+#define HALF_SCREEN_WIDTH  (SCREEN_WIDTH / 2.0)
+#define HALF_SCREEN_HEIGHT (SCREEN_HEIGHT / 2.0)
 
 typedef struct BoundingBox2D {
     Vector2 min;
@@ -160,7 +160,7 @@ void DrawPlayer(Player* player) {
         PLAYER_RECTANGLE_SIZE,
     };
     DrawRectangleRec(playerRect, RED);
-    DrawCircle(player->position.x, player->position.y, 5, GOLD);
+    DrawCircleV(player->position, 5, GOLD);
 }
 
 void UpdatePlayer(GameState* gameState, InputState* inputState, float deltaTime) {
