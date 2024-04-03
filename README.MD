@@ -14,48 +14,67 @@ Feel free to submit improvement PRs.
 * vscode-icons-team.vscode-icons
 * ms-vscode.makefile-tools
 
-
 ## Build instructions
+
 This project uses clang as a compiler. If you wish to modify that behaviour, look into the root CMakeLists.txt.
 
 For windows, you need llvm-mingw installed and added to your PATH.
-For downloads see: https://github.com/mstorsjo/llvm-mingw/releases
+For downloads see: <https://github.com/mstorsjo/llvm-mingw/releases>
 
 Unzip and add the `/bin` directory to your PATH.
 
-### Steps:
-1. run this into your terminal:
+## Steps
 
-Linux:
+### 1. Run this into your terminal
+
+#### Linux (C)
+
 ```sh
-$ mkdir build; cd build; cmake -DCMAKE_C_COMPILER=clang ..;
+mkdir build; cd build; cmake -DCMAKE_C_COMPILER=clang ..;
 ```
 
-Windows:
+#### Windows (C)
+
 ```sh
-$ mkdir build
-$ cd build
-$ cmake -G "MinGW Makefiles" -DCMAKE_C_COMPILER=clang.exe ..
+mkdir build; cd build; cmake -G "MinGW Makefiles" -DCMAKE_C_COMPILER=clang.exe ..
 ```
 
-2. build
+---
+
+#### Linux (C++)
+
+```sh
+mkdir build; cd build; cmake -DCMAKE_CXX_COMPILER=clang++ ..;
+```
+
+#### Windows (C++)
+
+```sh
+mkdir build; cd build; cmake -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER=clang++.exe ..
+```
+
+### 2. Build
 
 From the `build` directory:
+
 ```sh
-$ cmake --build .
+cmake --build .
 ```
 
-## Run
+### 3. Run
 
 Linux:
+
 ```sh
-$ ./src/main
+./src/main
 ```
 
 Windows:
+
 ```sh
-$ ./src/main.exe
+./src/main.exe
 ```
 
-## TODO:
+## TODO
+
 * provide build rules/ jobs
