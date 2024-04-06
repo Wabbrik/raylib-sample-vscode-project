@@ -1,13 +1,12 @@
 {
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
         "editor.formatOnSave": true
     },
-    "clang-format.assumeFilename": "${workspaceFolder}/.clang-format",
-    "clang-format.executable": "clang-format",
     "clangd.detectExtensionConflicts": true,
     "clangd.enableCodeCompletion": true,
     "clangd.restartAfterCrash": true,
     "clangd.inactiveRegions.opacity": 0.3,
-    "makefile.makefilePath": "${workspaceFolder}/build",
+    "makefile.makefilePath": "${workspaceFolder}/build"
 }
+

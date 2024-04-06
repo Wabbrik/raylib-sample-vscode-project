@@ -10,7 +10,6 @@ Feel free to submit improvement PRs.
 * josetr.cmake-language-support-vscode
 * ms-vscode.cmake-tools
 * llvm-vs-code-extensions.vscode-clangd
-* xaver.clang-format
 * vscode-icons-team.vscode-icons
 * ms-vscode.makefile-tools
 
